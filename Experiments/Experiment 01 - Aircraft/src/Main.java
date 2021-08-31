@@ -1,3 +1,4 @@
+import aircrafts.Aircraft;
 import aircrafts.Airplane;
 import aircrafts.Fighter;
 import aircrafts.Harrier;
@@ -12,28 +13,28 @@ public class Main {
 	public static void main(String[] args) {
 		
 		// using Helicopter with VerticalTakeOff & SubSonicFly
-		Helicopter helicopter = new Helicopter();
-		helicopter.setTakeOff(new VerticalTakeOff());
-		helicopter.setFlight(new SubSonicFly());
-		helicopter.displayInfo();
+		Aircraft aircraft = new Helicopter();
+		aircraft.setTakeOff(new VerticalTakeOff());
+		aircraft.setFlight(new SubSonicFly());
+		aircraft.displayInfo();
 		
 		// using Airplane with LongDistanceTakeOff & SubSonicFly
-		Airplane airplane = new Airplane();
-		airplane.setTakeOff(new LongDistanceTakeOff());
-		airplane.setFlight(new SubSonicFly());
-		airplane.displayInfo();
+		aircraft = new Airplane();
+		aircraft.setTakeOff(new LongDistanceTakeOff());
+		aircraft.setFlight(new SubSonicFly());
+		aircraft.displayInfo();
 		
 		// using Fighter with LongDistanceTakeOff & SuperSonicFly
-		Fighter fighter = new Fighter();
-		fighter.setTakeOff(new LongDistanceTakeOff());
-		fighter.setFlight(new SuperSonicFly());
-		fighter.displayInfo();
+		aircraft = new Fighter();
+		aircraft.setTakeOff(new LongDistanceTakeOff());
+		aircraft.setFlight(new SuperSonicFly());
+		aircraft.displayInfo();
 		
 		// using Harrier with VerticalTakeOff & SuperSonicFly
-		Harrier harrier = new Harrier();
-		harrier.setTakeOff(new VerticalTakeOff());
-		harrier.setFlight(new SuperSonicFly());
-		harrier.displayInfo();
+		aircraft = new Harrier();
+		aircraft.setTakeOff(new VerticalTakeOff());
+		aircraft.setFlight(new SuperSonicFly());
+		aircraft.displayInfo();
 	}
 
 }
